@@ -1,0 +1,125 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaScriptTutorials</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="static/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="container-1">
+      <h2 class="challenge-1-header" id="name">Challenge 1: Your Age in Days</h2>
+      <div>
+        <button class="btn" onclick="ageInDays()">Click Me</button>
+      </div>
+  
+      <div>
+        <button class="btn" onclick="reset()">Reset</button>
+      </div>
+  
+      <div class="result-box" id="result-box"></div>
+    </div>
+
+    <div class="container-2">
+      <header>
+        <h2>Challenge 2: Image Generator</h2>
+      </header>
+
+      <div>
+      <button class="btn" onclick="generateCat()">Generate Image</button>
+      </div>
+
+      <div>
+      <button class="btn" onclick="resetCatGenerator()">Reset</button>
+      </div>
+
+      <div class="img" id="img-gen-box"></div>
+    </div>
+
+    <div class="container-3">
+      <header>
+        <h2>Challenge 3: Rock Paper & Scissors</h2>
+      </header>
+
+      <div>
+        <h3>Click any image to start the Game</h3>
+      </div>
+
+      <div id="game-display-box" class="game-display">
+        <img id="rock" src="https://www.fodors.com/wp-content/uploads/2019/08/rock-stack.jpg" alt="Rock" onclick="rpsGame(this)">
+        <img id="paper" src="https://image.freepik.com/free-photo/top-view-pieces-paper-wooden-table_1232-744.jpg" alt="Papaer" onclick="rpsGame(this)">
+        <img id="scissors" src="https://images-na.ssl-images-amazon.com/images/I/81TD%2B0Y9f6L._AC_SL1500_.jpg" alt="Scissors" onclick="rpsGame(this)">
+      </div>
+
+      <div>
+        <button class="btn" onclick="rpsGameReset()">Reset</button>
+      </div>
+    </div>
+
+    <div id="colorful-buttons" class="container-4">
+      <header>
+        <h2>Challenge 4: Change the color of the Buttons</h2>
+      </header>
+
+      <div>
+        <form action="">
+          <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+            <option value="random">Random</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="reset">Reset</option>
+          </select>
+        </form>
+
+        <button class="btn btn-primary">Facebook!</button>
+        <button class="btn btn-danger">Yahoo!</button>
+        <button class="btn btn-warning">Google</button>
+        <button class="btn btn-success">House</button>
+      </div>
+    </div>
+
+    <div class="container-5">
+      <header>
+        <h2>Challenge 5: Blackjack</h2>
+        <h3><span id="blackjack-result">Let's Play</span></h3>
+      </header>
+
+      <div class="display-row-1">
+        <div id="your-box">
+          <h2>You: <span id="your-blackjack-result">0</span></h2>
+        </div>
+
+        <div id="dealer-box">
+          <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+        </div>
+      </div>
+
+      <div class="display-row-2">
+        <div>
+          <button id="blackjack-hit-button" class="btn btn-primary">Hit</button>
+          <button id="blackjack-stand-button" class="btn btn-warning">Stand</button>
+          <button id="blackjack-deal-button" class="btn btn-danger">Deal</button>
+        </div>
+      </div>
+
+      <div class="display-row-3 ">
+        <table>
+          <tr>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Draws</th>
+          </tr>
+
+          <tr>
+            <th><span id="wins">0</span></th>
+            <th><span id="losses">0</span></th>
+            <th><span id="draws">0</span></th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="static/js/script.js"></script>
+</body>
+</html>
